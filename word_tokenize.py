@@ -8,6 +8,7 @@ import time
 def tokenize_item(item):
     idx, text = item
     tokens = word_tokenize(str(text), format="text")  # ép về str để tránh lỗi NaN
+    
     return idx, tokens
 
 if __name__ == "__main__":
